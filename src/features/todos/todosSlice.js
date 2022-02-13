@@ -1,7 +1,7 @@
 const initialState =  [
         {id: 0, text: 'Learn React', completed: true},
-        {id: 0, text: 'Learn Redux', completed: false, color: 'purple'},
-        {id: 0, text: 'Build something fun!', completed: false, color: 'blue'},
+        {id: 1, text: 'Learn Redux', completed: false, color: 'purple'},
+        {id: 2, text: 'Build something fun!', completed: false, color: 'blue'},
 ]
 
 function nextTodoId(todos) {
@@ -14,26 +14,20 @@ function nextTodoId(todos) {
 
 export default function todosReducer(state = initialState, action) {
     switch(action.type) {
-        case 'todo/todoAdded':
-            return {
-                ...state,
-                todos: [
-                    ...state.todos,
-                    {
-                        id: nextTodoId(state.todos),
-                        text: action.payload,
-                        completed: false
-                    }
-                ]
-            }
-        case 'todo/todoToggled':
+        case 'todos/todoAdded':
             return [
                 ...state,
-                state.map(todo => {
-                    if (todo.id !== action.payload) { return todo }
-                    return {...todo, completed: !todo.completed}
-                })
-            ]
+                {
+                    id: nextTodoId(state),
+                    text: action.payload,
+                    completed: false
+                }
+            ];
+        case 'todos/todoToggled':
+            return state.map(todo => {
+                if (todo.id !== action.payload) { return todo }
+                return {...todo, completed: !todo.completed}
+            })
         default:
             return state
     }
