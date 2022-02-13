@@ -45,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:16.14.0"],
             ["react-dom", "virtual:ec1f154d9ac61013dcd67a7c43715a0cb5a9c3a5d2bec2a0dbc480e848d68603c4bd57de6388b6103e32a2c5a23d51efe9b24bf1efba47a95e91545728dcd60b#npm:16.14.0"],
             ["react-scripts", "virtual:ec1f154d9ac61013dcd67a7c43715a0cb5a9c3a5d2bec2a0dbc480e848d68603c4bd57de6388b6103e32a2c5a23d51efe9b24bf1efba47a95e91545728dcd60b#npm:3.4.3"],
+            ["redux", "npm:4.1.2"],
             ["seedrandom", "npm:3.0.5"]
           ],
           "linkType": "SOFT",
@@ -16020,6 +16021,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["redux", [
+        ["npm:4.1.2", {
+          "packageLocation": "./.yarn/cache/redux-npm-4.1.2-04cdbe7a08-6a839cee5b.zip/node_modules/redux/",
+          "packageDependencies": [
+            ["redux", "npm:4.1.2"],
+            ["@babel/runtime", "npm:7.17.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["redux-fundamentals-example", [
         ["workspace:.", {
           "packageLocation": "./",
@@ -16035,6 +16046,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:16.14.0"],
             ["react-dom", "virtual:ec1f154d9ac61013dcd67a7c43715a0cb5a9c3a5d2bec2a0dbc480e848d68603c4bd57de6388b6103e32a2c5a23d51efe9b24bf1efba47a95e91545728dcd60b#npm:16.14.0"],
             ["react-scripts", "virtual:ec1f154d9ac61013dcd67a7c43715a0cb5a9c3a5d2bec2a0dbc480e848d68603c4bd57de6388b6103e32a2c5a23d51efe9b24bf1efba47a95e91545728dcd60b#npm:3.4.3"],
+            ["redux", "npm:4.1.2"],
             ["seedrandom", "npm:3.0.5"]
           ],
           "linkType": "SOFT",
